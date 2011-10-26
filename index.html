@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<!--  Ping Pong Game with HTML5  Author Isen Beqiri©  2010. -->
+<html>
+  <head>
+	 <link rel="stylesheet" href="Style/master.css" type="text/css">
+	
+    <title>First </title>
+    <meta charset="utf-8">
+   
+ 
+  </head>
+  <body>
+<center>
+	<p class='instructions'> <b><font color='red'>Press Space to start the game.</font></b> This game works perfectly with Safari (5.0) and Chrome (8.0). If you open the game in Chrome and you find the ball moving too fast, just zoom in the page to adjust the speed. </p>
+	<canvas id="board" width="600" height="300" style="border:0px solid #c3c3c3;"  >
+		Your browser does not support the canvas element.
+	</canvas>
+	<br />
+	<br />
+	<br />
+	<div id="score_board">
+	<div id="player1score" class="flips" > 0 </div>
+	<div id="player2score"  class="flips"> 0 </div>
+	</div>
+	<br />
+	<br />
+
+
+</center>	
+
+
+  <script type="text/javascript" src="Scripts/jquery.js"></script>
+	<script type="text/javascript" src="Scripts/game_lib.js"></script>
+	<script type="text/javascript" src="Scripts/main.js"></script>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-18994612-2']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	
+	
+  </body>
+
+</html>
