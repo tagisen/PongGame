@@ -27,16 +27,16 @@ var intervalId = 0;
 function ball(x,y,r) {
 
   cnv.beginPath();
-  grd=cnv.createLinearGradient(0,0,175,50);
-  grd.addColorStop(0,"#ccffff");
-  grd.addColorStop(1,"#ff9900");
+  grd=cnv.createLinearGradient( 0, 0, 175, 50);
+  grd.addColorStop( 0, "#ccffff");
+  grd.addColorStop(1, "#ff9900");
   cnv.fillStyle=grd;
-  cnv.arc(x, y, r, 0, Math.PI*2, true);
+  cnv.arc(x, y, r, 0, Math.PI * 2, true);
   cnv.closePath();
   cnv.fill();
 }
 
-function paddle(x,y,w,h) {
+function paddle(x , y, w, h) {
   cnv.beginPath();
   cnv.rect(x,y,w,h);
   cnv.closePath();
